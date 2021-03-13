@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <title>Mini Profile - Free Bootstrap CSS Template</title>
+    
+<!--
+Mini Profile Template
+https://templatemo.com/tm-530-mini-profile
+-->
+  </head>
+  <body>
+    <!-- Welcome Section -->
+    <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-01.jpg">
+      <div class="container-fluid tm-brand-container-outer">
+        <div class="row">
+          <div class="col-12">
+            <!-- Logo Area -->
+            <!-- Black transparent bg -->
+            <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
+              <div class="tm-brand-container text-center">
+                <h1 class="tm-brand-name">سعود معصب الجحدلي</h1>
+                <p class="tm-brand-description mb-0"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tm-bg-white-transparent tm-welcome-container">
+        <div class="container-fluid">
+          <div class="row h-100">
+            <!-- Welcome Text -->
+            <!-- White transparent bg -->
+            <div class="col-md-7 tm-welcome-left-col">
+              <div class="tm-welcome-left">
+                <h2 class="tm-welcome-title">نبذة عني</h2>
+                <p class="pb-0">
+                  اهلا انا سعود بن معصب الجحدلي  
+                    طالب في جامعة ام القرى تخصص نظم المعلومات في كلية الحاسب الالي ولدت في مكة المكرمة عام 1999م
+                 </p>
+              </div>
+            </div>
+            <!-- Brown bg -->
+            
+                 <img src="me.jpeg" height="500px" width="300px">
+                
+              </div>
+            </div>
+          </div>
+        
+      
+    </section>
+    <!-- End Welcome section -->
+
+    <!-- Portfolio section -->
+    <section id="tmPortfolio">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="tm-portfolio-item">
+              <div class="tm-portfolio-name text-white tm-bg-green">
+                الدورات 
+              </div>
+              <div class="tm-portfolio-description">
+                <h3 class="tm-text-green">
+                  
+                  <span class="tm-title-small"></span>
+                </h3>
+                <p class="mb-0">
+                  الاسعافات الاولية , الحاسب الالي, الغوص في المياه المفتوحة
+                </p>
+              </div>
+            </div>
+
+            <div class="tm-portfolio-item">
+              <div class="tm-portfolio-name text-white tm-bg-orange">
+                الخبرات 
+              </div>
+              <div class="tm-portfolio-description">
+                <h3 class="tm-text-orange">
+                  
+                  <span class="tm-title-small"></span>
+                </h3>
+                <p class="mb-0">
+                1439 العمل في قطار الحرمين عام 1440 والعمل في شركة زين 
+                </p>
+              </div>
+            </div>
+
+            <div class="tm-portfolio-item">
+              <div class="tm-portfolio-name text-white tm-bg-blue">
+                هواياتي
+              </div>
+              <div class="tm-portfolio-description">
+                <h3 class="tm-text-blue">
+                  
+                  <span class="tm-title-small"></span>
+                </h3>
+                <p class="mb-0">
+                  كرة القدم ,السباحه
+                </p>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </section>
+      
+      <video controls width="800">
+          
+      <source src="M4.mp4" type="video/mp4">
+          
+      </video>
+      
+      <audio src="ss.mp4"controls>
+      </audio> 
+      
+    <!-- End portfolio section -->
+      
+ 
+      
+    <!-- Contact section -->
+    
+    <!-- section -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+      function detectMsBrowser() {
+        using_ms_browser =
+          navigator.appName == "Microsoft Internet Explorer" ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Edge") > -1) ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Trident") > -1);
+
+        if (using_ms_browser == true) {
+          alert(
+            "Please use Chrome or Firefox for the best browsing experience!"
+          );
+        }
+      }
+      function setBrandMarginTop() {
+        var bottomContainerHeight = $(".tm-welcome-container").height();
+
+        $(".tm-brand-container-outer").css({
+          "margin-top": -bottomContainerHeight + "px"
+        });
+      }
+
+      $(function() {
+        setBrandMarginTop();
+        detectMsBrowser();
+
+        // Handle window resize event
+        $(window).resize(function() {
+          setBrandMarginTop();
+        });
+      });
+    </script>
+  </body>
+</html>
